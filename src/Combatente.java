@@ -6,7 +6,6 @@ public class Combatente {
 		public Combatente(int vida, String nome) {
 			this.vida = vida;
 			this.nome = nome;
-			
 		}
 				
 		public boolean estaVivo() {
@@ -17,5 +16,13 @@ public class Combatente {
 		public void receberAtaque(int dano) {
 			
 			this.vida -= dano;
+		}
+
+		public String getNome() {
+			return nome;
+		}
+
+		public int getVida(){
+			return vida;
 		}
 	}
