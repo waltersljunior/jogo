@@ -4,16 +4,14 @@ public class Game {
 
 	public static void main(String[] args) {
 		batalha();
-		
 	}
-	
+
 	public static void batalha() {
-		int x=1;
-		
+
 		Humano combatente1 = new Humano(60, "Augusto");
 		Dragao combatente2 = new Dragao(60, "Philipe");
 		int jogador = personagem();
-		
+
 		// imprime a batalha na tela
 		do {
 			System.out.println(combatente1.getNome() + ", Vida atual: " + combatente1.getVida());
@@ -49,8 +47,6 @@ public class Game {
 			System.out.println(combatente1.getNome() + " perdeu com: " + combatente1.getVida() + " de vida!");
 		}
 	}
-	
-	
 
 	// gera o ataque
 	public static int ataque() {
